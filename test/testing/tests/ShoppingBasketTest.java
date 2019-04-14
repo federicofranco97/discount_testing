@@ -146,6 +146,21 @@ public class ShoppingBasketTest {
         assertNotEquals(null, basket.ticket());
     }
     
+    /*
+    Metodo que testee que el String contenga algun caracter.
+    */
+    @Test
+    public void checkStringValue(){
+        String msj = basket.ticket();
+        String [] splTicket=msj.split("");
+        boolean valido=false;
+        for (String letra : splTicket) {
+            if(!"".equals(letra))valido=true;
+        }
+        
+        assertNotEquals(false, valido);
+    }
+    
     private CShoppingBasket basket;
     private CShoppingBasketItem bItem;
     private CProduct prod;

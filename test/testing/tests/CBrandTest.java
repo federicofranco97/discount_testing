@@ -68,6 +68,22 @@ public class CBrandTest {
         assertNotEquals(null,new CBrand("Doritos"));
     }
     
+    /*
+    Metodo que testee la creacion de una brand con un string sin contenido
+    */
+    @Test
+    public void createEmptyBrand(){
+        assertEquals(null,new CBrand(""));
+    }
+    
+    /*
+    Metodo que testee que la creacion de una brand no sean todos espacios en blanco
+    */
+    @Test
+    public void createSpacingBrand(){
+        assertEquals(null, new CBrand("   "));
+    }
+    
     
 }
 
