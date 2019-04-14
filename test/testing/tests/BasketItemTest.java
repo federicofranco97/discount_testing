@@ -30,9 +30,9 @@ public class BasketItemTest {
     */
     @Before
     public void setUp() {
-        prod = null;
         pay=null;
         pinst=null;
+        Item=new CShoppingBasketItem(pay,pinst,2);
     }
     
     @After
@@ -85,7 +85,62 @@ public class BasketItemTest {
     Deberia existir un metodo que verifique el count con el stock disponible del producto.
     */
     
-    private CProduct prod;
+    /*
+    Metodo que retorna un CPayment y testea que no devuelva un null
+    */
+    @Test
+    public void getCPayment(){
+          assertNotEquals(null, Item.payment());
+    }
+    
+    /*
+    Metodo que testea el retorno de una ProductInstance y que no retorne null
+    */
+    @Test
+    public void getInstance(){
+        assertNotEquals(null, Item.productInstance());
+    }
+    
+    /*
+    Metodo que testea el retorno del count del producto
+    */
+    @Test
+    public void returnCount(){
+        assertNotEquals(null, Item.count());
+    }
+    
+    /*
+    Metodo que testea que el count no retorne 0
+    */
+    @Test
+    public void return0Count(){
+        assertNotEquals(0, Item.count());
+    }
+    
+    /*
+    Metodo que testa que el count no retorne un numero invalido
+    */
+    @Test
+    public void returnInvalidCount(){
+        assertEquals(false, Item.count()<0);
+    }
+    
+    /*
+    Metodo que testea que el total sea valido (No de 0 ni negativo)
+    */
+    @Test
+    public void getTotal(){
+        assertEquals(false, Item.total()<0);   
+    }
+    
+    /*
+    Metodo que testea que le total no retorne null
+    */
+    @Test
+    public void totalNotNull(){
+        assertNotEquals(null, Item.total());
+    }
     private CPayment pay;
     private CProductInstance pinst;
+    private CShoppingBasketItem Item;
 }
