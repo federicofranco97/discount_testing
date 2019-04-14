@@ -119,7 +119,7 @@ public class ShoppingBasketTest {
     @Test
     public void validarTotal(){
         assertEquals(false,basket.total()<0);
-        
+            
     }
     
     /*
