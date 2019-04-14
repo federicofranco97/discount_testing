@@ -56,6 +56,7 @@ public class CShoppingBasket
         return 0.0f;
     }
 
+    //falta Testear
     public void applyDiscount(CDiscount discount)
     {
         // TODO: implement

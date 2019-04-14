@@ -1,5 +1,7 @@
 package testing.tests;
 
+import ar.edu.ub.testing.Discount.CBrand;
+import ar.edu.ub.testing.Discount.CProduct;
 import ar.edu.ub.testing.Discount.CShoppingBasket;
 import ar.edu.ub.testing.Discount.CShoppingBasketItem;
 import org.junit.After;
@@ -26,6 +28,8 @@ public class ShoppingBasketTest {
     public void setUp() {
         basket=null;
         bItem=null;
+        prod=null;
+        brand=null;
     }
     
     @After
@@ -68,8 +72,82 @@ public class ShoppingBasketTest {
 //    }
    
     
+   //espacio para agregar los metodos que ahora son void ^^^
     
+    /*
+    Metodo que testea el total de la basket
+    */
+    @Test
+    public void getTotal(){
+        assertNotEquals(null, basket.total());
+    }
+    
+    /*
+    Metodo que testea que le total de la compra sea un numero valido.
+    */
+    @Test
+    public void validarTotal(){
+        assertEquals(false,basket.total()<0);
+    }
+    
+    /*
+    Metodo que testea el total de descuento
+    */
+    @Test
+    public void getTotalDiscount(){
+        assertNotEquals(null, basket.totalDiscount());
+    }
+    
+    /*
+    Metodo que testea que le total de discount sea un numero valido.
+    */
+    @Test
+    public void validarTotalDiscount(){
+        assertEquals(false,basket.totalDiscount()<0);
+    }
+    
+    /*
+    Metodo que devuelve el neto de la compra.
+    */
+    @Test
+    public void traerNetCompra(){
+        assertNotEquals(null, basket.net());
+    }
+    
+    /*
+    Metodo que valida el numero que retorna net
+    */
+    @Test
+    public void validarNet(){
+        assertEquals(false,basket.net()<0);
+    }
+        
+    /*
+    Metodo que testea el hasDiscount
+    */
+    @Test
+    public void testHasDisc(){
+        assertNotEquals(null,basket.hasDiscountOnProduct(prod));
+    }
+    
+    /*
+    Metodo que testea el has discount on brand
+    */
+    @Test
+    public void brandHasDisc(){
+        assertNotEquals(null,basket.hasDiscountOnBrand(brand));
+    }
+    
+    /*
+    Metodo que testea el return del ticket valido
+    */
+    @Test
+    public void getTicket(){
+        assertNotEquals(null, basket.ticket());
+    }
     
     private CShoppingBasket basket;
     private CShoppingBasketItem bItem;
+    private CProduct prod;
+    private CBrand brand;
 }
