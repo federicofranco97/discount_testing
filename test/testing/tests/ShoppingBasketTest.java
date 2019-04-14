@@ -1,9 +1,11 @@
 package testing.tests;
 
 import ar.edu.ub.testing.Discount.CBrand;
+import ar.edu.ub.testing.Discount.CDiscount;
 import ar.edu.ub.testing.Discount.CProduct;
 import ar.edu.ub.testing.Discount.CShoppingBasket;
 import ar.edu.ub.testing.Discount.CShoppingBasketItem;
+import java.util.Collection;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -30,6 +32,8 @@ public class ShoppingBasketTest {
         bItem=null;
         prod=null;
         brand=null;
+        disc=null;
+        listProd=null;
     }
     
     @After
@@ -66,13 +70,40 @@ public class ShoppingBasketTest {
     Metodo que prueba agregar un item a la lista. Cambiaria a que retorne true
     si lo agrega exitosamente y que retorne false de lo contrario para poder testearlo.
     */
-//    @Test
-//    public void agregarItemValido(){
-//        assertNotEquals(false, basket.addItem(bItem));
-//    }
+    @Test
+    public void agregarItemValido(){
+        basket.addItem(bItem);
+        assertEquals(true, basket.items().contains(bItem));        
+    }
    
+    /*
+    Metodo que testea agregar un descuento
+    */
+    @Test
+    public void agregarUnDescuento(){
+        basket.applyDiscount(disc);
+        assertEquals(true, basket.discounts().contains(disc));
+    }
     
-   //espacio para agregar los metodos que ahora son void ^^^
+    /*
+    Metodo que testea agregar una lista de items
+    */
+    @Test
+    public void agregarListaItems(){
+        basket.addItems(listProd);
+        assertEquals(true, basket.discounts().containsAll(listProd));
+    }
+    
+    /*
+    Metodo para testear el removeItem
+    */
+    @Test
+    public void removeItem(){
+        basket.addItem(bItem);
+        basket.removeItem(bItem);
+        assertEquals(false, basket.items().contains(bItem));
+    }
+    
     
     /*
     Metodo que testea el total de la basket
@@ -165,4 +196,7 @@ public class ShoppingBasketTest {
     private CShoppingBasketItem bItem;
     private CProduct prod;
     private CBrand brand;
+    private CDiscount disc;
+    private Collection<CShoppingBasketItem> listProd;
+    
 }
