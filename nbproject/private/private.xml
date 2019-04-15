@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/fede/NetBeansProjects/DiscountTesting/test/testing/tests/CBrandTest.java</file>
-            <file>file:/home/fede/NetBeansProjects/DiscountTesting/src/ar/edu/ub/testing/Discount/CShoppingBasket.java</file>
-            <file>file:/home/fede/NetBeansProjects/DiscountTesting/test/testing/tests/ShoppingBasketTest.java</file>
+            <file>file:/home/fede/NetBeansProjects/DiscountTesting/test/testing/tests/CondMultipleTest.java</file>
+            <file>file:/home/fede/NetBeansProjects/DiscountTesting/src/ar/edu/ub/testing/Discount/CDiscountConditionMultiple.java</file>
         </group>
     </open-files>
 </project-private>
