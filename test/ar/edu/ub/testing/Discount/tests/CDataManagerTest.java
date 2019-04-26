@@ -1,10 +1,6 @@
 package ar.edu.ub.testing.Discount.tests;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,8 +13,10 @@ import ar.edu.ub.testing.Discount.CDiscountConditionBrand;
 import ar.edu.ub.testing.Discount.CDiscountEffectPercentage;
 import ar.edu.ub.testing.Discount.CPayment;
 import ar.edu.ub.testing.Discount.CProduct;
-import ar.edu.ub.testing.Discount.IDiscountCondition;
-import ar.edu.ub.testing.Discount.IDiscountEffect;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNotSame;
 
 class CDataManagerTest {
 

@@ -1,17 +1,17 @@
 package ar.edu.ub.testing.Discount.tests;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.Arrays;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.ub.testing.Discount.CDataManager;
 import ar.edu.ub.testing.Discount.CDiscountEffectAmount;
-import ar.edu.ub.testing.Discount.CDiscountInstance;
 import ar.edu.ub.testing.Discount.CShoppingBasket;
 import ar.edu.ub.testing.Discount.CShoppingBasketItem;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertNull;
 
 class CDiscountEffectAmountTest {
 

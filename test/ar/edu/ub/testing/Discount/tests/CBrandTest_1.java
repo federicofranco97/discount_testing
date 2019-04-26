@@ -1,11 +1,13 @@
 package ar.edu.ub.testing.Discount.tests;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import ar.edu.ub.testing.Discount.CBrand;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
 
 class CBrandTest {
 
