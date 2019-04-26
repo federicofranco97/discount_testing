@@ -1,4 +1,4 @@
-package testing.tests;
+package ar.edu.ub.testing.Discount.tests;
 
 import java.util.Arrays;
 import java.util.HashMap;

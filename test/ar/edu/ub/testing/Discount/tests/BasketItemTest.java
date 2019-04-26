@@ -1,5 +1,5 @@
 
-package testing.tests;
+package ar.edu.ub.testing.Discount.tests;
 
 import ar.edu.ub.testing.Discount.CPayment;
 import ar.edu.ub.testing.Discount.CProduct;

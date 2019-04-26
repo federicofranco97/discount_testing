@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/fede/NetBeansProjects/DiscountTesting/test/ar/edu/ub/testing/Discount/tests/CDiscountEffectAmountTest.java</file>
+            <file>file:/home/fede/NetBeansProjects/DiscountTesting/test/ar/edu/ub/testing/Discount/tests/CBrandTest_1.java</file>
+            <file>file:/home/fede/NetBeansProjects/DiscountTesting/test/ar/edu/ub/testing/Discount/tests/CDataManagerTest.java</file>
+            <file>file:/home/fede/NetBeansProjects/DiscountTesting/test/ar/edu/ub/testing/Discount/tests/CDiscountConditionMultipleTest.java</file>
+        </group>
     </open-files>
 </project-private>

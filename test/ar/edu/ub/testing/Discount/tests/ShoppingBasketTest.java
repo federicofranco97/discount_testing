@@ -1,4 +1,4 @@
-package testing.tests;
+package ar.edu.ub.testing.Discount.tests;
 
 import ar.edu.ub.testing.Discount.CBrand;
 import ar.edu.ub.testing.Discount.CDiscount;
